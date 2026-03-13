@@ -47,15 +47,18 @@ const Login = () => {
 							onChange={(e) => setPassword(e.target.value)}
 						/>
 					</div>
-					<Link to='/signup' className='text-sm text-white hover:underline hover:text-blue-600 mt-2 inline-block'>
-						{"Don't"} have an account?
-					</Link>
+					<p className='text-sm mt-2'>
+  Don't have an account?{" "}
+  <Link to='/signup' className='text-blue-500 hover:underline'>
+    Sign Up
+  </Link>
+</p>
 
-					<div>
-						<button className='btn btn-block btn-sm mt-2' disabled={loading}>
-							{loading ? <span className='loading loading-spinner '></span> : "Login"}
-						</button>
-					</div>
+					<div className="flex flex-col gap-2 mt-3">
+                        <button className='btn btn-block btn-sm' disabled={loading}>
+                            {loading ? <span className='loading loading-spinner'></span> : "Login"}
+                       </button>
+                   </div>
 				</form>
 			</div>
 		</div>
