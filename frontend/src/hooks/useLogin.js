@@ -11,7 +11,7 @@ const useLogin = () => {
 		if (!success) return;
 		setLoading(true);
 		try {
-			const res = await fetch("https://mern-chat-backend-ium5.onrender.com/api/auth/login", {
+			const res = await fetch("https://mern-chat-app-backend-9jsu.onrender.com/api/auth/login", {
 				method: "POST",
 				headers: { "Content-Type": "application/json" },
 				body: JSON.stringify({ username, password }),
