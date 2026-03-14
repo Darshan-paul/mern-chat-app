@@ -22,7 +22,7 @@ app.use(cookieParser());
 
 app.use(
 	cors({
-		origin: "https://mern-chat-app-u3wr.onrender.com",
+		origin: "https://mern-chat-app-backend-9jsu.onrender.com",
 		credentials: true,
 	})
 );
